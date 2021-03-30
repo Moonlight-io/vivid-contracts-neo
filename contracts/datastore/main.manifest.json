@@ -1,0 +1,171 @@
+{
+    "name": "main",
+    "groups": [],
+    "abi": {
+        "methods": [
+            {
+                "name": "name",
+                "offset": 0,
+                "parameters": [],
+                "returntype": "String",
+                "safe": false
+            },
+            {
+                "name": "contract_version",
+                "offset": 2,
+                "parameters": [],
+                "returntype": "String",
+                "safe": false
+            },
+            {
+                "name": "create_index",
+                "offset": 4,
+                "parameters": [
+                    {
+                        "name": "domain",
+                        "type": "ByteArray"
+                    },
+                    {
+                        "name": "index",
+                        "type": "Void"
+                    },
+                    {
+                        "name": "key",
+                        "type": "ByteArray"
+                    },
+                    {
+                        "name": "pointer",
+                        "type": "Integer"
+                    }
+                ],
+                "returntype": "Boolean",
+                "safe": false
+            },
+            {
+                "name": "create_object",
+                "offset": 62,
+                "parameters": [
+                    {
+                        "name": "domain",
+                        "type": "ByteArray"
+                    },
+                    {
+                        "name": "obj",
+                        "type": "ByteArray"
+                    }
+                ],
+                "returntype": "Integer",
+                "safe": false
+            },
+            {
+                "name": "get_index",
+                "offset": 97,
+                "parameters": [
+                    {
+                        "name": "domain",
+                        "type": "ByteArray"
+                    },
+                    {
+                        "name": "index",
+                        "type": "Void"
+                    },
+                    {
+                        "name": "key",
+                        "type": "ByteArray"
+                    }
+                ],
+                "returntype": "Array",
+                "safe": false
+            },
+            {
+                "name": "get_object",
+                "offset": 104,
+                "parameters": [
+                    {
+                        "name": "domain",
+                        "type": "ByteArray"
+                    },
+                    {
+                        "name": "pointer",
+                        "type": "Integer"
+                    }
+                ],
+                "returntype": "ByteArray",
+                "safe": false
+            },
+            {
+                "name": "get_objects_by_index",
+                "offset": 116,
+                "parameters": [
+                    {
+                        "name": "domain",
+                        "type": "ByteArray"
+                    },
+                    {
+                        "name": "index",
+                        "type": "Void"
+                    },
+                    {
+                        "name": "key",
+                        "type": "ByteArray"
+                    }
+                ],
+                "returntype": "Array",
+                "safe": false
+            },
+            {
+                "name": "verify_index_available",
+                "offset": 253,
+                "parameters": [
+                    {
+                        "name": "domain",
+                        "type": "ByteArray"
+                    },
+                    {
+                        "name": "index",
+                        "type": "Void"
+                    },
+                    {
+                        "name": "key",
+                        "type": "ByteArray"
+                    }
+                ],
+                "returntype": "Boolean",
+                "safe": false
+            },
+            {
+                "name": "get_write_pointer",
+                "offset": 283,
+                "parameters": [
+                    {
+                        "name": "domain",
+                        "type": "ByteArray"
+                    }
+                ],
+                "returntype": "Integer",
+                "safe": false
+            },
+            {
+                "name": "_initialize",
+                "offset": 352,
+                "parameters": [],
+                "returntype": "Void",
+                "safe": false
+            }
+        ],
+        "events": []
+    },
+    "permissions": [
+        {
+            "contract": "*",
+            "methods": "*"
+        }
+    ],
+    "trusts": [],
+    "supportedstandards": [],
+    "extra": {
+        "Author": "Tyler Adams",
+        "Email": "tyler@coz.io",
+        "Description": "This smart contract implements a pointer-based database on top of the key-value storage layer to enable advanced storage features."
+    }
+}
